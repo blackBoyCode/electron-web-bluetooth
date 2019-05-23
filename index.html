@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+    <!--fonts material icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <br>
+    <button class="foo-button mdc-button mdc-button--outlined">Start Bluetooth Test</button>
+
+    <div>
+      <button id="sendID" class=" mdc-button mdc-button--outlined">Send Words To Device</button>
+      <br>
+      <div class="mdc-text-field">
+        <input type="text" id="text-field-id" class="mdc-text-field__input">
+        <label class="mdc-floating-label" for="my-text-field">Hint text</label>
+        <div class="mdc-line-ripple"></div>
+      </div>
+    </div>
+
+
+    <script>
+      // adding the index script
+      require('./index.js')
+      //require('./WebBluetoothTest.js')
+      //require('./CustomX.js')
+    </script>
+  </body>
+</html>
